@@ -15,7 +15,10 @@
         outsmart their components.
       </h2>
     </header>
+
     <main class="container">
+      <p id="status">Player 1's turn</p>
+
       <div class="game-board">
         <div class="cell"></div>
         <div class="cell"></div>
@@ -27,11 +30,19 @@
         <div class="cell"></div>
         <div class="cell"></div>
       </div>
+
+      <input type="text" id="player1" placeholder="Player 1 Name" />
+      <input type="text" id="player2" placeholder="Player 2 Name" />
+      <button id="startBtn">Start Game</button>
+
+      <button id="restart">Restart Game</button>
     </main>
+
     <footer class="container">
       <p>&COPY; <span id="year"></span> Kevin Kamau. All rights reserved.</p>
     </footer>
     <script src="scripts/index.js"></script>
+    <script src="scripts/script.js"></script>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
